@@ -1,0 +1,16 @@
+.codex-work/
+.pnpm-store/
+beadflow/node_modules/
+beadflow/**/dist/
+beadflow/**/.venv/
+beadflow/**/__pycache__/
+beadflow/**/*.pyc
+beadflow/**/*.tsbuildinfo
+beadflow/output/
+build/
+coverage/
+.idea/
+*.iml
+*.log
+beadflow/.codex-*.log
+beadflow/**/.codex-*.log

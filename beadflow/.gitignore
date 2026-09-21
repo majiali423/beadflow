@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.vite/
+.env
+.env.local
+.venv/
+__pycache__/
+.pytest_cache/
+supabase/.temp/
+*.pyc
+.DS_Store
+*.log
+apps/cv-service/fixtures/private/
+apps/cv-service/reports/private/

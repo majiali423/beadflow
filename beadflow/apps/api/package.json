@@ -1,0 +1,27 @@
+{
+  "name": "@beadflow/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=../../.env.local src/server.ts",
+    "build": "tsc -b && tsup",
+    "start": "node dist/server.js",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@beadflow/inventory-engine": "workspace:*",
+    "@beadflow/palette-engine": "workspace:*",
+    "@beadflow/shared-types": "workspace:*",
+    "fastify": "^5.4.0",
+    "zod": "^4.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+.venv
+.pytest_cache
+**/__pycache__
+SPEC.md
+docs/archive/
+pnpm-lock.yaml

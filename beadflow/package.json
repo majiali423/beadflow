@@ -1,0 +1,31 @@
+{
+  "name": "beadflow",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @beadflow/web dev",
+    "dev:api": "pnpm --filter @beadflow/api dev",
+    "palette:seed": "tsx tool/generate-mard-palette-migration.ts",
+    "palette:seed:check": "tsx tool/generate-mard-palette-migration.ts --check",
+    "build": "pnpm -r --if-present build",
+    "format": "prettier --write AGENTS.md README.md PRIVACY.md package.json pnpm-workspace.yaml tsconfig.base.json eslint.config.mjs .prettierrc.json docker-compose.yml \".github/**/*.yml\" \"apps/web/**/*.{ts,tsx,json,html,css}\" \"apps/api/**/*.{ts,json}\" \"packages/**/*.{ts,tsx,json,md}\" \"tool/**/*.ts\" \"docs/**/*.md\"",
+    "format:check": "prettier --check AGENTS.md README.md PRIVACY.md package.json pnpm-workspace.yaml tsconfig.base.json eslint.config.mjs .prettierrc.json docker-compose.yml \".github/**/*.yml\" \"apps/web/**/*.{ts,tsx,json,html,css}\" \"apps/api/**/*.{ts,json}\" \"packages/**/*.{ts,tsx,json,md}\" \"tool/**/*.ts\" \"docs/**/*.md\"",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "supabase": "2.109.1",
+    "tsx": "4.23.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0"
+  }
+}

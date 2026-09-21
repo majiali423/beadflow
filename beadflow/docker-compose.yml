@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    env_file:
+      - .env
+    ports:
+      - '3001:3001'
+
+  cv-service:
+    build:
+      context: apps/cv-service
+    ports:
+      - '8001:8001'

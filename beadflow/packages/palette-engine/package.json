@@ -1,0 +1,23 @@
+{
+  "name": "@beadflow/palette-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@beadflow/shared-types": "workspace:*",
+    "zod": "^4.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "vitest": "^3.2.4"
+  }
+}
